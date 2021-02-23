@@ -44,7 +44,7 @@ Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para ace
 <p align="center">Desenvolvido com 💜 por Anderson André</p>
 
 # 🚀 Como executar o projeto
----
+
 ## 🧭 Rodando a aplicação WEB (Front-End)
 ```bash
 npm run dev
