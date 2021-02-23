@@ -9,22 +9,22 @@
 	border-radius: 50%;
 }
 
-.profileContainer div {
+.profileContainer .profileInfo {
 	margin-left: 1.5rem;
 }
 
-.profileContainer div strong {
+.profileContainer .profileInfo strong {
 	font-size: 1.5rem;
 	font-weight: 600;
 	color: var(--title);
 }
 
-.profileContainer div p {
+.profileContainer .profileInfo p {
 	font-size: 1rem;
 	margin-top: 0.5rem;
 	display: flex;
 }
 
-.profileContainer div p img {
+.profileContainer .profileInfo p img {
 	margin-right: 0.5rem;
 }

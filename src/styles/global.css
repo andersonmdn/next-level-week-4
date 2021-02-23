@@ -10,6 +10,22 @@
 	--blue: #5965e0;
 	--blue-dark: #4953b8;
 	--blue-twitter: #2aa9e0;
+	--countdown-background: #fff;
+}
+
+[data-theme="dark"] {
+	--white: #fff;
+	--background: #2F3136;
+	--gray-line: #dcdde0;
+	--text: #8e9297;
+	--text-highlight: #b3b9ff;
+	--title: #fff;
+	--red: #e83f5b;
+	--green: #4cd62b;
+	--blue: #7289da;
+	--blue-dark: #677BC4;
+	--blue-twitter: #2aa9e0;
+	--countdown-background: #303339;
 }
 
 * {
@@ -21,6 +37,12 @@
 body {
 	background-color: var(--background);
 	color: var(--text);
+
+	
+}
+
+body, div, span, p {
+	transition: background-color 1s, border-color 1s, color 0.1s;
 }
 
 body, input, textarea, button {

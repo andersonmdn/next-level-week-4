@@ -1,0 +1,83 @@
+
+.themeSwitchWrapper {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+}
+.themeSwitchWrapper em {
+	margin-left: 10px;
+	font-size: 1rem;
+}
+.themeSwitch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	min-width: 60px;
+}
+
+.themeSwitch input {
+	display: none;
+}
+
+.slider {
+	background-color: var(--background);
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: 0.4s;
+	width: 26px;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: var(--background);
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+.slider svg {
+	color: var(--text);
+	position: absolute;
+	transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
+	pointer-events: none;
+}
+
+.featherMoon {
+	opacity: 0;
+	left: 9px;
+	bottom: 9px;
+	transform: translateX(4px);
+}
+
+.featherSun {
+	opacity: 1;
+	right: 10px;
+	bottom: 9px;
+	transform: translateX(0px);
+}
+
+input:checked + .slider .featherMoon {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+input:checked + .slider .featherSun {
+	opacity: 0;
+	transform: translateX(-4px);
+}
